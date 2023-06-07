@@ -1,0 +1,173 @@
+.bullhorn-container-bkg {
+    background-color: rgba(black, 0.8);
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s opacity ease-in-out;
+
+    &.active {
+        pointer-events: all;
+        opacity: 1;
+    }
+}
+
+.bullhorn-container {
+    position: fixed;
+    max-height: 90vh;
+    // overflow-y: auto;
+    z-index: 999999;
+    transition: 0.3s transform ease-in-out, 0.3s opacity ease-in-out;
+    // opacity: 0;
+    pointer-events: none;
+    width: 100%;
+
+    @include mobile {
+        margin: 0 !important;
+        width: 100% !important;
+        max-height: 100vh !important;
+        inset: 0 !important;
+    }
+
+    .post-edit-link {
+        position: absolute;
+        top: 15px;
+        right: 50px;
+        font-size: 16px;
+        text-decoration: underline !important;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+        overflow-y: auto;
+    }
+
+    .bullhorn-wrap {
+        position: relative;
+
+        .bullhorn-close {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            right: 15px;
+            top: 15px;
+            border-radius: 100%;
+            cursor: pointer;
+            display: block;
+
+            span {
+                height: 3px;
+                width: 100%;
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                cursor: pointer;
+
+                &:nth-of-type(1) {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-of-type(2) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    &.left {
+        left: 0;
+        top: 50%;
+        transform: translateX(-200%) translateY(-50%);
+
+        &.active {
+            transform: translateY(-50%);
+        }
+    }
+
+    &.right {
+        right: 0;
+        top: 50%;
+        transform: translateX(200%) translateY(-50%);
+
+        &.active {
+            transform: translateY(-50%);
+        }
+    }
+
+    &.bottom {
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%) translateY(200%);
+
+        &.active {
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+
+    &.bottom-left {
+        left: 25px;
+        bottom: 25px;
+        transform: translateY(200%);
+
+        &.active {
+            transform: translateX(0) translateY(0);
+        }
+    }
+
+    &.bottom-right {
+        right: 25px;
+        bottom: 25px;
+        transform: translateY(200%);
+
+        &.active {
+            transform: translateX(0) translateY(0);
+        }
+    }
+}
+
+/* ==========================================================================
+   Top-level block spacing
+   ========================================================================== */
+
+.bullhorn-wrap {
+    > *:not(p, ul, ol) {
+        margin-bottom: 0;
+    }
+}
+
+/* ==========================================================================
+   Backgrounds
+   ========================================================================== */
+
+.bullhorn-container {
+    &.dark-bkg {
+        .bullhorn-close {
+            span {
+                background-color: white;
+            }
+        }
+
+        .post-edit-link {
+            color: white !important;
+        }
+    }
+
+    &.light-bkg {
+        .bullhorn-close {
+            span {
+                background-color: black;
+            }
+        }
+
+        .post-edit-link {
+            color: black !important;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.is-root-container {
+    background-color: #f7f7f7 !important;
+    padding: 60px !important;
+}
+
+.edit-post-visual-editor__post-title-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.editor-styles-wrapper .wp-block-post-title {
+    max-width: 100% !important;
+    padding: 30px !important;
+    font-size: 30px !important;
+    color: #666 !important;
+    margin: 0 !important;
+}
+
+.is-root-container > div.wp-block {
+    margin: 0 auto !important;
+}
