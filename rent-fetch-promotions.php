@@ -3,7 +3,7 @@
 	Plugin Name: Rent Fetch Promotions
 	Plugin URI: https://github.com/jonschr/rent-fetch-promotions
     Description: Just another promotions plugin
-	Version: 0.2.1
+	Version: 0.2.2
     Author: Brindle Digital
     Author URI: https://brindledigital.com
 
@@ -25,7 +25,7 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 
 // Define the version of the plugin
-define( 'BULLHORN_VERSION', '0.2.1' );
+define( 'BULLHORN_VERSION', '0.2.2' );
 
 // Plugin directory
 define( 'BULLHORN_URL', plugin_dir_url( __FILE__ ) );
