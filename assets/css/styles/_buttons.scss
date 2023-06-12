@@ -1,7 +1,7 @@
-.bullhorn-button-wrap {
+.rfp-button-wrap {
     position: fixed;
 
-    .bullhorn-button {
+    .rfp-button {
         padding: 20px 40px;
         text-decoration: none;
         position: static;
@@ -22,7 +22,7 @@
 
     &.left,
     &.right {
-        .bullhorn-button {
+        .rfp-button {
             padding: 40px 20px;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
@@ -34,7 +34,7 @@
         bottom: 0;
         pointer-events: none;
 
-        .bullhorn-button {
+        .rfp-button {
             border-top-right-radius: 3px;
             pointer-events: all;
         }
@@ -45,7 +45,7 @@
         bottom: 0;
         pointer-events: none;
 
-        .bullhorn-button {
+        .rfp-button {
             border-top-left-radius: 3px;
             pointer-events: all;
         }
@@ -58,7 +58,7 @@
         text-align: center;
         pointer-events: none;
 
-        .bullhorn-button {
+        .rfp-button {
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
             pointer-events: all;

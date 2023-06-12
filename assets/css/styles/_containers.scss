@@ -1,4 +1,4 @@
-.bullhorn-container-bkg {
+.rfp-container-bkg {
     background-color: rgba(black, 0.8);
     position: fixed;
     inset: 0;
@@ -13,7 +13,7 @@
     }
 }
 
-.bullhorn-container {
+.rfp-container {
     position: fixed;
     max-height: 90vh;
     // overflow-y: auto;
@@ -48,10 +48,10 @@
         overflow-y: auto;
     }
 
-    .bullhorn-wrap {
+    .rfp-wrap {
         position: relative;
 
-        .bullhorn-close {
+        .rfp-close {
             position: absolute;
             height: 20px;
             width: 20px;
@@ -136,7 +136,7 @@
    Top-level block spacing
    ========================================================================== */
 
-.bullhorn-wrap {
+.rfp-wrap {
     > *:not(p, ul, ol) {
         margin-bottom: 0;
     }
@@ -146,9 +146,9 @@
    Backgrounds
    ========================================================================== */
 
-.bullhorn-container {
+.rfp-container {
     &.dark-bkg {
-        .bullhorn-close {
+        .rfp-close {
             span {
                 background-color: white;
             }
@@ -160,7 +160,7 @@
     }
 
     &.light-bkg {
-        .bullhorn-close {
+        .rfp-close {
             span {
                 background-color: black;
             }

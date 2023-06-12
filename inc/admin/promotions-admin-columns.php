@@ -1,7 +1,7 @@
 <?php
 
 // Add custom columns to the admin post list
-function add_promotions_admin_columns($columns) {
+function rfp_add_promotions_admin_columns($columns) {
     $new_columns = array(
         'cb' => '<input type="checkbox">',
         'title' => __('Title'),
@@ -17,10 +17,10 @@ function add_promotions_admin_columns($columns) {
 
     return $new_columns;
 }
-add_filter('manage_promotions_posts_columns', 'add_promotions_admin_columns');
+add_filter( 'manage_promotions_posts_columns', 'rfp_add_promotions_admin_columns');
 
 // Populate custom columns with data
-function populate_promotions_admin_columns($column, $post_id) {
+function rfp_populate_promotions_admin_columns($column, $post_id) {
     switch ($column) {
         case 'button_label':
             $button_label = get_post_meta($post_id, 'button_label', true) ?: 'My New Promotion';
@@ -56,7 +56,7 @@ function populate_promotions_admin_columns($column, $post_id) {
             break;
     }
 }
-add_action('manage_promotions_posts_custom_column', 'populate_promotions_admin_columns', 10, 2);
+add_action('manage_promotions_posts_custom_column', 'rfp_populate_promotions_admin_columns', 10, 2);
 
 // Make the 'modified' column sortable
 function make_modified_column_sortable($columns) {

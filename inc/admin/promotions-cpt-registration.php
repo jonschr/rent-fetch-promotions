@@ -3,8 +3,8 @@
 /**
  * Register the content type
  */
-add_action( 'init', 'bh_register_promotions_content_type' );
-function bh_register_promotions_content_type() {
+add_action( 'init', 'rfp_register_promotions_content_type' );
+function rfp_register_promotions_content_type() {
 
 	//* NAME
 	$name_plural = 'Promotions';
@@ -52,8 +52,8 @@ function bh_register_promotions_content_type() {
 }
 
 //* Redirect the single posts to the custom archive page
-add_action( 'template_redirect', 'bh_redirect_single_promotions' );
-function bh_redirect_single_promotions() {
+add_action( 'template_redirect', 'rfp_redirect_single_promotions' );
+function rfp_redirect_single_promotions() {
 	
     if ( !is_singular( 'promotions' ) )
         return;

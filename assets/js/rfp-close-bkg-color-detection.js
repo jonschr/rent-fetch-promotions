@@ -1,13 +1,13 @@
 jQuery(document).ready(function ($) {
-    $('.bullhorn-close').each(function () {
+    $('.rfp-close').each(function () {
         var $element = $(this);
 
-        // Get the position and dimensions of the .bullhorn-close element
+        // Get the position and dimensions of the .rfp-close element
         var elementOffset = $element.offset();
         var elementWidth = $element.outerWidth();
         var elementHeight = $element.outerHeight();
 
-        // Capture a screenshot of the area behind the .bullhorn-close element
+        // Capture a screenshot of the area behind the .rfp-close element
         html2canvas(document.body, {
             x: elementOffset.left,
             y: elementOffset.top,
@@ -61,7 +61,7 @@ jQuery(document).ready(function ($) {
                     0.114 * averageBlue;
 
                 // Add the appropriate class based on luminance to the nearest .post-edit-link element
-                var $container = $element.closest('.bullhorn-container');
+                var $container = $element.closest('.rfp-container');
                 if (luminance < 128) {
                     $container.addClass('dark-bkg');
                 } else {

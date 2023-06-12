@@ -25,13 +25,13 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 
 // Define the version of the plugin
-define( 'BULLHORN_VERSION', '0.2.1' );
+define( 'RENTFETCH_PROMOTIONS_VERSION', '0.2.1' );
 
 // Plugin directory
-define( 'BULLHORN_URL', plugin_dir_url( __FILE__ ) );
-define( 'BULLHORN_DIR', dirname( __FILE__ ) );
+define( 'RENTFETCH_PROMOTIONS_URL', plugin_dir_url( __FILE__ ) );
+define( 'RENTFETCH_PROMOTIONS_DIR', dirname( __FILE__ ) );
 
-$directory = new RecursiveDirectoryIterator(BULLHORN_DIR . "/inc/");
+$directory = new RecursiveDirectoryIterator(RENTFETCH_PROMOTIONS_DIR . "/inc/");
 $iterator = new RecursiveIteratorIterator($directory);
 $phpFiles = new RegexIterator($iterator, '/\.php$/');
 

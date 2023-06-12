@@ -1,3 +1,8 @@
+## 0.2.1
+
+-   Prefixing functions to avoid php errors (whoops!)
+-   Updating all div names to match rfp- or rent-fetch-promotions-
+
 ### 0.2.1
 
 -   Bugfixes around the default colors for buttons

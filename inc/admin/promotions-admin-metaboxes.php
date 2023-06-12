@@ -1,7 +1,7 @@
 <?php
 
 // Add the "Promotion details" metabox
-function add_promotion_metabox() {
+function rfp_add_promotion_metabox() {
     add_meta_box(
         'promotion_details_metabox',
         'Promotion Details',
@@ -11,14 +11,14 @@ function add_promotion_metabox() {
         'high'
     );
 }
-add_action('add_meta_boxes', 'add_promotion_metabox');
+add_action('add_meta_boxes', 'rfp_add_promotion_metabox');
 
 // Enqueue color picker script
-function enqueue_color_picker() {
+function rfp_enqueue_color_picker() {
     wp_enqueue_script('wp-color-picker');
     wp_enqueue_style('wp-color-picker');
 }
-add_action('admin_enqueue_scripts', 'enqueue_color_picker');
+add_action( 'admin_enqueue_scripts', 'rfp_enqueue_color_picker');
 
 // Render the "Promotion details" metabox
 function render_promotion_details_metabox($post) {
@@ -139,7 +139,7 @@ function save_promotion_metabox($post_id) {
 add_action('save_post_promotions', 'save_promotion_metabox');
 
 // Output the color picker script initialization
-function output_color_picker_script() {
+function rfp_output_color_picker_script() {
     ?>
     <script>
         jQuery(document).ready(function($) {
@@ -148,4 +148,4 @@ function output_color_picker_script() {
     </script>
     <?php
 }
-add_action('admin_footer', 'output_color_picker_script');
+add_action('admin_footer', 'rfp_output_color_picker_script');

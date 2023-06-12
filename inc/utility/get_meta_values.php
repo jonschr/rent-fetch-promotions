@@ -1,6 +1,6 @@
 <?php
 
-function bh_get_meta_values( $key = '', $type = 'post', $status = 'publish' ) {
+function rfp_get_meta_values( $key = '', $type = 'post', $status = 'publish' ) {
 
     global $wpdb;
 
