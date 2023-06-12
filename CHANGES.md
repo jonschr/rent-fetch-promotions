@@ -1,3 +1,8 @@
+### 0.2.3
+
+-   Prefixing functions to avoid php errors (whoops!)
+-   Updating all div names to match rfp- or rent-fetch-promotions-
+
 ### 0.2.2
 
 -   Buxfix: left and right weren't showing on mobile
