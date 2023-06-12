@@ -1,7 +1,7 @@
-## 0.2.1
+### 0.2.2
 
--   Prefixing functions to avoid php errors (whoops!)
--   Updating all div names to match rfp- or rent-fetch-promotions-
+-   Buxfix: left and right weren't showing on mobile
+-   Adding higher z-index values to buttons containers
 
 ### 0.2.1
 
