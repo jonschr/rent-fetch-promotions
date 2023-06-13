@@ -1,3 +1,7 @@
+### 0.2.4
+
+-   Bugfix: setting button containers to not be clickable (mostly because of mobile)
+
 ### 0.2.3
 
 -   Prefixing functions to avoid php errors (whoops!)
