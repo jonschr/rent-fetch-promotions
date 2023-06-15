@@ -1,3 +1,7 @@
+### 0.2.5
+
+-   Bugfix: removing padding accidentally added globally (only load it on the promotions content type)
+
 ### 0.2.4
 
 -   Bugfix: setting button containers to not be clickable (mostly because of mobile)

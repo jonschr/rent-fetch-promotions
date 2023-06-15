@@ -17,9 +17,9 @@ function rfp_enqueue_custom_editor_assets() {
     
     $screen = get_current_screen();
     
-    // // bail if we're not on the promotions post type
-    // if ( !$screen || $screen->post_type !== 'promotions' )
-    //     return;
+    // bail if we're not on the promotions post type
+    if ( !$screen || $screen->post_type !== 'promotions' )
+        return;
         
     // Enqueue JavaScript
     wp_enqueue_script(
